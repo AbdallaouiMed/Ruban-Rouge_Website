@@ -182,11 +182,8 @@ export default function Home() {
               'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&q=80',
               'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80',
             ].map((imgUrl, i) => (
-              <a
+              <div
                 key={i}
-                href="https://instagram.com/ruban_rouge_meknes"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="relative aspect-square group overflow-hidden rounded-lg"
               >
                 <Image
@@ -196,14 +193,8 @@ export default function Home() {
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors" />
-              </a>
+              </div>
             ))}
-          </div>
-          <div className="text-center mt-8">
-            <p className="text-sm text-espresso/60 italic">
-              {/* Note: Wire to Instagram API later */}
-              Instagram feed coming soon
-            </p>
           </div>
         </div>
       </section>

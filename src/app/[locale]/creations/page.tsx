@@ -25,7 +25,7 @@ const sampleProducts = [
     id: 3,
     category: 'patisseries',
     name: 'Mille-Feuille',
-    image: 'https://images.unsplash.com/photo-1619985632461-f33748ef8f3e?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80',
   },
   {
     id: 4,
@@ -43,7 +43,7 @@ const sampleProducts = [
     id: 6,
     category: 'patisseries',
     name: 'Éclair au Chocolat',
-    image: 'https://images.unsplash.com/photo-1612208593649-380e66861d82?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1543773726-5ca8c0dceb08?w=600&q=80',
   },
   {
     id: 7,
