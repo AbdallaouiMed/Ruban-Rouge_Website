@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "Ruban Rouge — Artisan Bakery in Meknès since 1940",
+    "description": "Discover Ruban Rouge, the premier artisan bakery in Meknès since 1940. Specialists in bakery, viennoiseries, fine pastries, chocolates and ice cream."
+  },
+  "nav": {
+    "home": "Home",
+    "histoire": "Our Story",
+    "creations": "Our Creations",
+    "commandes": "Orders",
+    "contact": "Contact",
+    "phone": "Call"
+  },
+  "hero": {
+    "title": "The Art of Pastry since 1940",
+    "subtitle": "Passion, imagination and tradition",
+    "cta_primary": "Discover our creations",
+    "cta_secondary": "Find us"
+  },
+  "heritage": {
+    "years": "85 years of excellence",
+    "since": "Since 1940"
+  },
+  "categories": {
+    "title": "Our Creations",
+    "boulangerie": "Bakery",
+    "viennoiseries": "Viennoiseries",
+    "patisseries": "Pastries",
+    "chocolats": "Chocolates",
+    "glaces": "Ice Cream",
+    "gateaux_commande": "Custom Cakes",
+    "patisserie_marocaine": "Moroccan Pastries"
+  },
+  "story": {
+    "title": "Our Story",
+    "subtitle": "A family tradition of excellence",
+    "description": "Since 1940, Ruban Rouge has embodied the art of French pastry in the heart of Meknès. Three generations of master artisans have perpetuated our unique know-how, combining traditional techniques and modern creativity.",
+    "cta": "Learn more"
+  },
+  "instagram": {
+    "title": "Follow us on Instagram",
+    "handle": "@ruban_rouge_meknes"
+  },
+  "testimonials": {
+    "title": "What our customers say"
+  },
+  "visit": {
+    "title": "Visit Us",
+    "address": "198 Bd des F.A.R., Résidence Al Hamd, Meknès",
+    "hours_title": "Opening Hours",
+    "hours": "Every day, 06:30 AM – 10:30 PM",
+    "cta": "View on map"
+  },
+  "footer": {
+    "about_title": "Ruban Rouge",
+    "about_description": "Passion, imagination and tradition — quality craftsmanship since 1940.",
+    "links_title": "Quick Links",
+    "contact_title": "Contact",
+    "hours_title": "Hours",
+    "address": "198 Bd des F.A.R., Résidence Al Hamd",
+    "city": "Meknès, Morocco",
+    "boutique": "Boutique",
+    "orders": "Orders",
+    "copyright": "© 2026 Ruban Rouge Meknès · All rights reserved"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "submit": "Send",
+      "success": "Your message has been sent successfully!"
+    }
+  },
+  "orders": {
+    "title": "Custom Orders",
+    "subtitle": "Let's create your dream cake together",
+    "description": "Whether for a wedding, birthday, or any other special event, our master pastry chefs create custom cakes that elevate your celebrations.",
+    "phone_note": "Orders by phone",
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "event_date": "Event date",
+      "event_type": "Event type",
+      "event_types": {
+        "wedding": "Wedding",
+        "birthday": "Birthday",
+        "baptism": "Baptism",
+        "corporate": "Corporate event",
+        "other": "Other"
+      },
+      "message": "Describe your project",
+      "submit": "Submit request",
+      "success": "Your request has been sent successfully! We will contact you soon."
+    }
+  },
+  "common": {
+    "learn_more": "Learn more",
+    "view_all": "View all",
+    "back": "Back",
+    "mad": "MAD"
+  }
+}

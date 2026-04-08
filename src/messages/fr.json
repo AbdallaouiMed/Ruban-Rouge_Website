@@ -1,0 +1,107 @@
+{
+  "metadata": {
+    "title": "Ruban Rouge — Pâtisserie Artisanale à Meknès depuis 1940",
+    "description": "Découvrez Ruban Rouge, la pâtisserie artisanale de référence à Meknès depuis 1940. Spécialistes en boulangerie, viennoiseries, pâtisseries fines, chocolats et glaces."
+  },
+  "nav": {
+    "home": "Accueil",
+    "histoire": "Notre Histoire",
+    "creations": "Nos Créations",
+    "commandes": "Commandes",
+    "contact": "Contact",
+    "phone": "Appeler"
+  },
+  "hero": {
+    "title": "L'Art de la Pâtisserie depuis 1940",
+    "subtitle": "Passion, imagination et tradition",
+    "cta_primary": "Découvrir nos créations",
+    "cta_secondary": "Nous trouver"
+  },
+  "heritage": {
+    "years": "85 ans d'excellence",
+    "since": "Depuis 1940"
+  },
+  "categories": {
+    "title": "Nos Créations",
+    "boulangerie": "Boulangerie",
+    "viennoiseries": "Viennoiseries",
+    "patisseries": "Pâtisseries",
+    "chocolats": "Chocolats",
+    "glaces": "Glaces",
+    "gateaux_commande": "Gâteaux sur commande",
+    "patisserie_marocaine": "Pâtisserie marocaine"
+  },
+  "story": {
+    "title": "Notre Histoire",
+    "subtitle": "Une tradition familiale d'excellence",
+    "description": "Depuis 1940, Ruban Rouge incarne l'art de la pâtisserie française au cœur de Meknès. Trois générations de maîtres artisans ont perpétué notre savoir-faire unique, alliant techniques traditionnelles et créativité moderne.",
+    "cta": "En savoir plus"
+  },
+  "instagram": {
+    "title": "Suivez-nous sur Instagram",
+    "handle": "@ruban_rouge_meknes"
+  },
+  "testimonials": {
+    "title": "Ce que disent nos clients"
+  },
+  "visit": {
+    "title": "Venez nous rendre visite",
+    "address": "198 Bd des F.A.R., Résidence Al Hamd, Meknès",
+    "hours_title": "Horaires d'ouverture",
+    "hours": "Tous les jours, 06h30 – 22h30",
+    "cta": "Voir sur la carte"
+  },
+  "footer": {
+    "about_title": "Ruban Rouge",
+    "about_description": "Passion, imagination et tradition — un savoir-faire de qualité depuis 1940.",
+    "links_title": "Liens rapides",
+    "contact_title": "Contact",
+    "hours_title": "Horaires",
+    "address": "198 Bd des F.A.R., Résidence Al Hamd",
+    "city": "Meknès, Maroc",
+    "boutique": "Boutique",
+    "orders": "Commandes",
+    "copyright": "© 2026 Ruban Rouge Meknès · Tous droits réservés"
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes à votre écoute",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "submit": "Envoyer",
+      "success": "Votre message a été envoyé avec succès !"
+    }
+  },
+  "orders": {
+    "title": "Commandes Personnalisées",
+    "subtitle": "Créons ensemble le gâteau de vos rêves",
+    "description": "Que ce soit pour un mariage, un anniversaire, ou tout autre événement spécial, nos maîtres pâtissiers créent des gâteaux sur mesure qui subliment vos célébrations.",
+    "phone_note": "Commandes par téléphone",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "event_date": "Date de l'événement",
+      "event_type": "Type d'événement",
+      "event_types": {
+        "wedding": "Mariage",
+        "birthday": "Anniversaire",
+        "baptism": "Baptême",
+        "corporate": "Événement d'entreprise",
+        "other": "Autre"
+      },
+      "message": "Décrivez votre projet",
+      "submit": "Envoyer la demande",
+      "success": "Votre demande a été envoyée avec succès ! Nous vous contacterons bientôt."
+    }
+  },
+  "common": {
+    "learn_more": "En savoir plus",
+    "view_all": "Voir tout",
+    "back": "Retour",
+    "mad": "DH"
+  }
+}
