@@ -37,6 +37,70 @@
     "description": "Depuis 1940, Ruban Rouge incarne l'art de la pâtisserie française au cœur de Meknès. Trois générations de maîtres artisans ont perpétué notre savoir-faire unique, alliant techniques traditionnelles et créativité moderne.",
     "cta": "En savoir plus"
   },
+  "histoire_page": {
+    "title": "Notre Histoire",
+    "subtitle": "85 ans de passion et d'excellence",
+    "intro": "Depuis 1940, Ruban Rouge est bien plus qu'une simple pâtisserie. C'est une institution meknassie, un symbole de qualité et de savoir-faire artisanal qui se transmet de génération en génération.",
+    "timeline_title": "Notre Parcours",
+    "values_title": "Nos Valeurs",
+    "values": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "Nous sélectionnons les meilleurs ingrédients et utilisons des techniques éprouvées pour créer des pâtisseries d'exception."
+      },
+      "tradition": {
+        "title": "Tradition",
+        "description": "Nos recettes authentiques sont le fruit de 85 ans d'expérience et de perfectionnement continu."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "Tout en respectant nos traditions, nous intégrons de nouvelles créations pour surprendre et ravir nos clients."
+      },
+      "famille": {
+        "title": "Famille",
+        "description": "Chaque client est accueilli comme un membre de la famille Ruban Rouge, avec chaleur et attention."
+      }
+    },
+    "timeline": [
+      {
+        "year": "1940",
+        "title": "Les Débuts",
+        "description": "Fondation de Ruban Rouge par notre grand-père, maître pâtissier formé en France. Ouverture de la première boutique au cœur de Meknès."
+      },
+      {
+        "year": "1965",
+        "title": "Expansion",
+        "description": "Introduction de nouvelles spécialités chocolatières et ouverture de l'atelier de production. Ruban Rouge devient une référence à Meknès."
+      },
+      {
+        "year": "1985",
+        "title": "Deuxième Génération",
+        "description": "Transmission du savoir-faire à la deuxième génération. Modernisation des équipements tout en préservant les méthodes artisanales."
+      },
+      {
+        "year": "2000",
+        "title": "Diversification",
+        "description": "Lancement de notre gamme de glaces artisanales et élargissement de notre offre de pâtisseries marocaines traditionnelles."
+      },
+      {
+        "year": "2015",
+        "title": "Troisième Génération",
+        "description": "La nouvelle génération apporte un souffle de créativité moderne tout en honorant l'héritage familial."
+      },
+      {
+        "year": "2026",
+        "title": "Aujourd'hui",
+        "description": "Ruban Rouge continue d'innover et de ravir les palais des Meknassis et visiteurs, fort de 85 ans d'excellence artisanale."
+      }
+    ]
+  },
+  "creations_page": {
+    "title": "Nos Créations",
+    "subtitle": "Découvrez notre savoir-faire artisanal",
+    "intro": "Chaque création est le fruit d'un savoir-faire transmis de génération en génération, alliant tradition et innovation pour vous offrir des pâtisseries d'exception.",
+    "filter_all": "Tout",
+    "no_products": "Aucun produit dans cette catégorie pour le moment."
+  },
   "instagram": {
     "title": "Suivez-nous sur Instagram",
     "handle": "@ruban_rouge_meknes"

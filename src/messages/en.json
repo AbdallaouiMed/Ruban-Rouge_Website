@@ -37,6 +37,70 @@
     "description": "Since 1940, Ruban Rouge has embodied the art of French pastry in the heart of Meknès. Three generations of master artisans have perpetuated our unique know-how, combining traditional techniques and modern creativity.",
     "cta": "Learn more"
   },
+  "histoire_page": {
+    "title": "Our Story",
+    "subtitle": "85 years of passion and excellence",
+    "intro": "Since 1940, Ruban Rouge has been more than just a pastry shop. It's a Meknès institution, a symbol of quality and artisanal craftsmanship passed down through generations.",
+    "timeline_title": "Our Journey",
+    "values_title": "Our Values",
+    "values": {
+      "excellence": {
+        "title": "Excellence",
+        "description": "We select the finest ingredients and use proven techniques to create exceptional pastries."
+      },
+      "tradition": {
+        "title": "Tradition",
+        "description": "Our authentic recipes are the result of 85 years of experience and continuous refinement."
+      },
+      "innovation": {
+        "title": "Innovation",
+        "description": "While respecting our traditions, we integrate new creations to surprise and delight our customers."
+      },
+      "famille": {
+        "title": "Family",
+        "description": "Every customer is welcomed as a member of the Ruban Rouge family, with warmth and care."
+      }
+    },
+    "timeline": [
+      {
+        "year": "1940",
+        "title": "The Beginning",
+        "description": "Foundation of Ruban Rouge by our grandfather, a master pastry chef trained in France. Opening of the first shop in the heart of Meknès."
+      },
+      {
+        "year": "1965",
+        "title": "Expansion",
+        "description": "Introduction of new chocolate specialties and opening of the production workshop. Ruban Rouge becomes a reference in Meknès."
+      },
+      {
+        "year": "1985",
+        "title": "Second Generation",
+        "description": "Transmission of know-how to the second generation. Modernization of equipment while preserving artisanal methods."
+      },
+      {
+        "year": "2000",
+        "title": "Diversification",
+        "description": "Launch of our artisanal ice cream range and expansion of our traditional Moroccan pastry offerings."
+      },
+      {
+        "year": "2015",
+        "title": "Third Generation",
+        "description": "The new generation brings a breath of modern creativity while honoring the family heritage."
+      },
+      {
+        "year": "2026",
+        "title": "Today",
+        "description": "Ruban Rouge continues to innovate and delight the palates of Meknès residents and visitors, with 85 years of artisanal excellence."
+      }
+    ]
+  },
+  "creations_page": {
+    "title": "Our Creations",
+    "subtitle": "Discover our artisanal craftsmanship",
+    "intro": "Each creation is the result of know-how passed down through generations, combining tradition and innovation to offer you exceptional pastries.",
+    "filter_all": "All",
+    "no_products": "No products in this category at the moment."
+  },
   "instagram": {
     "title": "Follow us on Instagram",
     "handle": "@ruban_rouge_meknes"
