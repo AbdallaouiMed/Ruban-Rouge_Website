@@ -1,40 +1,56 @@
 import { useTranslations } from 'next-intl';
+import { Button } from '@/components/Button';
 
 export default function Home() {
   const t = useTranslations();
 
   return (
-    <div className="min-h-screen bg-ivory">
-      <main className="container mx-auto px-4 py-16">
-        <div className="text-center">
-          <h1 className="font-display text-6xl font-bold text-espresso mb-4">
-            Ruban Rouge
-          </h1>
-          <p className="font-script text-3xl text-gold mb-8">
+    <div>
+      {/* Hero Section - Dark background for transparent navbar */}
+      <section
+        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-espresso via-espresso/95 to-ruban-red-dark"
+        style={{
+          backgroundImage:
+            'url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundBlendMode: 'overlay',
+        }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
+        <div className="relative z-10 container mx-auto px-4 py-32 text-center text-white">
+          <p className="font-script text-2xl md:text-3xl text-gold mb-6 animate-fade-in">
             {t('heritage.since')}
           </p>
-          <h2 className="font-display text-4xl font-bold text-ruban-red mb-6">
+          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in">
             {t('hero.title')}
-          </h2>
-          <p className="font-sans text-xl text-espresso/80 mb-8">
+          </h1>
+          <p className="font-sans text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90">
             {t('hero.subtitle')}
           </p>
-          <div className="flex gap-4 justify-center">
-            <button className="bg-ruban-red hover:bg-ruban-red-dark text-white font-sans font-semibold px-8 py-3 rounded-full transition-colors">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button variant="primary" href="/creations">
               {t('hero.cta_primary')}
-            </button>
-            <button className="border-2 border-gold text-gold hover:bg-gold hover:text-white font-sans font-semibold px-8 py-3 rounded-full transition-colors">
+            </Button>
+            <Button variant="outline-gold" href="/contact">
               {t('hero.cta_secondary')}
-            </button>
+            </Button>
           </div>
         </div>
+      </section>
 
-        <div className="mt-16 text-center">
-          <p className="font-sans text-espresso/60">
-            Phase 1 Complete — Foundation is ready! 🎉
+      {/* Content Below Hero */}
+      <section className="py-24 bg-ivory">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-display text-4xl font-bold text-espresso mb-4">
+            Phase 2 Complete
+          </h2>
+          <p className="font-sans text-lg text-espresso/70 max-w-2xl mx-auto">
+            Navbar with transparent-to-solid scroll behavior, language switcher, and full footer
+            are now integrated. Scroll up to see the navbar change!
           </p>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
