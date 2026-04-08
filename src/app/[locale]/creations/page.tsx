@@ -43,25 +43,19 @@ const sampleProducts = [
     id: 6,
     category: 'patisseries',
     name: 'Éclair au Chocolat',
-    image: 'https://images.unsplash.com/photo-1612201142855-bfaa9362f6d1?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1603532648955-039310d9ed75?w=600&q=80',
   },
   {
     id: 7,
     category: 'viennoiseries',
     name: 'Pain au Chocolat',
-    image: 'https://images.unsplash.com/photo-1623334044303-241f5e465aa7?w=600&q=80',
+    image: 'https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=600&q=80',
   },
   {
     id: 8,
     category: 'boulangerie',
     name: 'Baguette',
     image: 'https://images.unsplash.com/photo-1508736793122-f516e3ba5569?w=600&q=80',
-  },
-  {
-    id: 9,
-    category: 'chocolats',
-    name: 'Pralines',
-    image: 'https://images.unsplash.com/photo-1606312619070-d48b4cda6029?w=600&q=80',
   },
 ];
 
