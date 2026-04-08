@@ -174,7 +174,14 @@ export default function Home() {
           </div>
           {/* Grid of 6 placeholder tiles */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-7xl mx-auto">
-            {[1, 2, 3, 4, 5, 6].map((i) => (
+            {[
+              'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80',
+              'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80',
+              'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80',
+              'https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&q=80',
+              'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&q=80',
+              'https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&q=80',
+            ].map((imgUrl, i) => (
               <a
                 key={i}
                 href="https://instagram.com/ruban_rouge_meknes"
@@ -183,10 +190,8 @@ export default function Home() {
                 className="relative aspect-square group overflow-hidden rounded-lg"
               >
                 <Image
-                  src={`https://images.unsplash.com/photo-${
-                    1486427944299 + i * 1000
-                  }-d1955d23e34d?w=400&q=80`}
-                  alt={`Instagram post ${i}`}
+                  src={imgUrl}
+                  alt={`Instagram post ${i + 1}`}
                   fill
                   className="object-cover transition-transform duration-300 group-hover:scale-110"
                 />
