@@ -6,6 +6,7 @@ import { notFound } from 'next/navigation';
 import { locales } from '@/lib/i18n';
 import { Navbar } from '@/components/Navbar';
 import { Footer } from '@/components/Footer';
+import { StructuredData } from '@/components/StructuredData';
 import "../globals.css";
 
 // Ruban Rouge Typography
@@ -64,6 +65,9 @@ export default async function LocaleLayout({ children, params }: Props) {
       dir={dir}
       className={`${playfair.variable} ${inter.variable} ${allura.variable} h-full antialiased`}
     >
+      <head>
+        <StructuredData />
+      </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider messages={messages}>
           <Navbar />

@@ -1,6 +1,25 @@
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Award, Heart, Lightbulb, Users } from 'lucide-react';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+
+  return genMeta({
+    title: `${t('histoire_page.title')} | Ruban Rouge Meknès`,
+    description: t('histoire_page.intro'),
+    locale,
+    path: '/histoire',
+  });
+}
 
 export default function HistoirePage() {
   const t = useTranslations();

@@ -1,8 +1,27 @@
 import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import { Button } from '@/components/Button';
 import { CategoryCard } from '@/components/CategoryCard';
 import { Star, MapPin, Clock } from 'lucide-react';
 import Image from 'next/image';
+import { generateMetadata as genMeta } from '@/lib/metadata';
+import type { Metadata } from 'next';
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale });
+
+  return genMeta({
+    title: t('metadata.title'),
+    description: t('metadata.description'),
+    locale,
+    path: '',
+  });
+}
 
 export default function Home() {
   const t = useTranslations();

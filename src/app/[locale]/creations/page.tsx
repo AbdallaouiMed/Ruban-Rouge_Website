@@ -4,6 +4,9 @@ import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import Image from 'next/image';
 
+// Note: Metadata cannot be exported from client components
+// Move to layout.tsx or create a server component wrapper if needed
+
 // Sample product data (in real app, this would come from a CMS or database)
 const sampleProducts = [
   {
