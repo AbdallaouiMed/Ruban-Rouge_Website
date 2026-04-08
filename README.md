@@ -230,8 +230,3 @@ The project uses:
 ## 🤝 Contributing
 
 This is a private commercial website. For questions or support, contact the development team.
-
----
-
-Built with ❤️ by Claude Code
-Generated with [Claude Code](https://claude.com/claude-code)

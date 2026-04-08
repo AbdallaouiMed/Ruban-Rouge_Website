@@ -25,7 +25,7 @@ const sampleProducts = [
     id: 3,
     category: 'patisseries',
     name: 'Mille-Feuille',
-    image: 'https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80',
+    image: '/mille-feuille.png',
   },
   {
     id: 4,
@@ -43,13 +43,13 @@ const sampleProducts = [
     id: 6,
     category: 'patisseries',
     name: 'Éclair au Chocolat',
-    image: 'https://images.unsplash.com/photo-1543773726-5ca8c0dceb08?w=600&q=80',
+    image: '/eclair-chocolat.png',
   },
   {
     id: 7,
     category: 'viennoiseries',
     name: 'Pain au Chocolat',
-    image: 'https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=600&q=80',
+    image: '/pain-chocolat.png',
   },
   {
     id: 8,

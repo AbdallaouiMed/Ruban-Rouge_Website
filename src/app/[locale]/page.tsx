@@ -34,7 +34,7 @@ export default function Home() {
     },
     {
       title: t('categories.viennoiseries'),
-      image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=80',
+      image: '/pain-chocolat.png',
       href: '/creations#viennoiseries',
     },
     {
@@ -176,7 +176,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-7xl mx-auto">
             {[
               'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80',
-              'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&q=80',
+              '/pain-chocolat.png',
               'https://images.unsplash.com/photo-1558961363-fa8fdf82db35?w=400&q=80',
               'https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&q=80',
               'https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&q=80',
