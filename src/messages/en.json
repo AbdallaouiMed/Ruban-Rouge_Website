@@ -103,5 +103,29 @@
     "view_all": "View all",
     "back": "Back",
     "mad": "MAD"
+  },
+  "home": {
+    "testimonials_data": [
+      {
+        "name": "Fatima El Amrani",
+        "text": "The best pastries in Meknès! The mille-feuille is divine and the butter croissants are perfect. Exceptional craftsmanship passed down through generations.",
+        "rating": 5
+      },
+      {
+        "name": "Ahmed Bennani",
+        "text": "I ordered a birthday cake for my 50th. It was a work of art as much as a delight. Everyone was impressed. Thank you Ruban Rouge!",
+        "rating": 5
+      },
+      {
+        "name": "Sophie Martin",
+        "text": "An essential address in Meknès. The quality is always there, whether for morning viennoiseries or cakes for special occasions.",
+        "rating": 5
+      },
+      {
+        "name": "Rachid Tazi",
+        "text": "Since my childhood, Ruban Rouge has been part of my best memories. The recipes haven't changed and that's wonderful! A true treasure of our city.",
+        "rating": 5
+      }
+    ]
   }
 }

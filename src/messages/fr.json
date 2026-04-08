@@ -103,5 +103,29 @@
     "view_all": "Voir tout",
     "back": "Retour",
     "mad": "DH"
+  },
+  "home": {
+    "testimonials_data": [
+      {
+        "name": "Fatima El Amrani",
+        "text": "Les meilleures pâtisseries de Meknès ! Le mille-feuille est divin et les croissants au beurre sont parfaits. Un savoir-faire exceptionnel qui se transmet de génération en génération.",
+        "rating": 5
+      },
+      {
+        "name": "Ahmed Bennani",
+        "text": "J'ai commandé un gâteau d'anniversaire pour mes 50 ans. C'était une œuvre d'art autant qu'un délice. Tout le monde était impressionné. Merci Ruban Rouge !",
+        "rating": 5
+      },
+      {
+        "name": "Sophie Martin",
+        "text": "Une adresse incontournable à Meknès. La qualité est toujours au rendez-vous, que ce soit pour les viennoiseries du matin ou les gâteaux pour les grandes occasions.",
+        "rating": 5
+      },
+      {
+        "name": "Rachid Tazi",
+        "text": "Depuis mon enfance, Ruban Rouge fait partie de mes meilleurs souvenirs. Les recettes n'ont pas changé et c'est tant mieux ! Un vrai trésor de notre ville.",
+        "rating": 5
+      }
+    ]
   }
 }
