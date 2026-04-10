@@ -7,6 +7,8 @@ import { MapPin, Phone, Clock, Mail, CheckCircle } from 'lucide-react';
 export default function ContactPage() {
   const t = useTranslations();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -14,19 +16,51 @@ export default function ContactPage() {
     message: '',
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // In a real app, this would send to an API
-    console.log('Form submitted:', formData);
-    setIsSubmitted(true);
-    setTimeout(() => setIsSubmitted(false), 5000);
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      message: '',
-    });
+    setIsSubmitting(true);
+    setErrorMessage('');
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          formSource: 'Contact',
+        }),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to submit form');
+      }
+
+      // Success
+      setIsSubmitted(true);
+      setTimeout(() => setIsSubmitted(false), 5000);
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        message: '',
+      });
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      setErrorMessage(
+        error instanceof Error ? error.message : 'Une erreur est survenue. Veuillez réessayer.'
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -119,9 +153,22 @@ export default function ContactPage() {
 
               <div className="bg-white rounded-lg shadow-xl p-8">
                 {isSubmitted && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
-                    <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0" />
-                    <p className="text-green-800 text-sm">{t('contact.form.success')}</p>
+                  <div className="mb-6 p-6 bg-gradient-to-r from-green-50 to-emerald-50 border-2 border-green-500 rounded-xl shadow-lg flex items-center gap-4 animate-in fade-in slide-in-from-top-2 duration-500">
+                    <div className="flex-shrink-0 w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
+                      <CheckCircle className="w-8 h-8 text-white" strokeWidth={3} />
+                    </div>
+                    <div>
+                      <p className="text-green-900 font-semibold text-base">{t('contact.form.success')}</p>
+                      <p className="text-green-700 text-sm mt-1">Nous vous répondrons dans les plus brefs délais</p>
+                    </div>
+                  </div>
+                )}
+
+                {errorMessage && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
+                    <p className="text-sm font-medium" style={{ color: '#B8232B' }}>
+                      {errorMessage}
+                    </p>
                   </div>
                 )}
 
@@ -201,9 +248,10 @@ export default function ContactPage() {
                   {/* Submit Button */}
                   <button
                     type="submit"
-                    className="w-full bg-ruban-red hover:bg-ruban-red-dark text-white font-sans font-semibold px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg"
+                    disabled={isSubmitting}
+                    className="w-full bg-ruban-red hover:bg-ruban-red-dark text-white font-sans font-semibold px-8 py-4 rounded-full transition-all hover:scale-105 shadow-lg disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
                   >
-                    {t('contact.form.submit')}
+                    {isSubmitting ? 'Envoi en cours...' : t('contact.form.submit')}
                   </button>
                 </form>
               </div>
