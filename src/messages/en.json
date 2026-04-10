@@ -157,7 +157,7 @@
         "corporate": "Corporate event",
         "other": "Other"
       },
-      "message": "Describe your project",
+      "message": "Describe your event",
       "submit": "Submit request",
       "success": "Your request has been sent successfully! We will contact you soon."
     }
