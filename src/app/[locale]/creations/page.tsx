@@ -60,6 +60,7 @@ const sampleProducts = [
 
 export default function CreationsPage() {
   const t = useTranslations();
+  const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState<string>('all');
 
   const categories = [
