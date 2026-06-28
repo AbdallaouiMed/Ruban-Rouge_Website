@@ -1,7 +1,12 @@
 'use client';
+
+import { useParams } from "next/navigation";
 import { useTranslations, useLocale } from 'next-intl';
 import { useState } from 'react';
 import Image from 'next/image';
+
+export default function CreationsPage() {
+  const { locale } = useParams<{ locale: string }>();
 
 // Note: Metadata cannot be exported from client components
 // Move to layout.tsx or create a server component wrapper if needed
