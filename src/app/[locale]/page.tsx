@@ -1,4 +1,4 @@
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 import { Button } from '@/components/Button';
 import { CategoryCard } from '@/components/CategoryCard';
