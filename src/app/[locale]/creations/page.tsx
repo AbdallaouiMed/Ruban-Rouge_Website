@@ -184,7 +184,7 @@ export default function CreationsPage() {
             {t('orders.subtitle')}
           </p>
           <a
-            href={`/${t('nav.commandes')}`}
+            href={`/${locale}/commandes`}
             className="inline-block bg-gold hover:bg-gold/90 text-espresso font-sans font-semibold px-8 py-3 rounded-full transition-all hover:scale-105"
           >
             {t('nav.commandes')}
