@@ -1,5 +1,5 @@
 'use client';
-
+import { useTranslations, useLocale } from 'next-intl';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import Image from 'next/image';
