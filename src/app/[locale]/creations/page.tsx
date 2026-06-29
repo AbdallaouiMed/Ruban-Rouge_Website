@@ -1,8 +1,9 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useState } from 'react';
 import Image from 'next/image';
+import { ScrollScrubVideoBackground } from '@/components/ScrollScrubVideoBackground';
 
 // Note: Metadata cannot be exported from client components
 // Move to layout.tsx or create a server component wrapper if needed
@@ -61,6 +62,7 @@ const sampleProducts = [
 
 export default function CreationsPage() {
   const t = useTranslations();
+  const locale = useLocale();
   const [activeFilter, setActiveFilter] = useState<string>('all');
 
   const categories = [
@@ -80,24 +82,18 @@ export default function CreationsPage() {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-espresso via-espresso/95 to-ruban-red-dark"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
-        <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white">
-          <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
-            {t('creations_page.title')}
-          </h1>
-          <p className="font-script text-xl md:text-2xl text-gold">
-            {t('creations_page.subtitle')}
-          </p>
+      <section className="relative bg-gradient-to-br from-espresso via-espresso/95 to-ruban-red-dark">
+        <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+          <ScrollScrubVideoBackground src="/cake_exploded_video.mp4" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/60 to-black/70" />
+          <div className="relative z-10 container mx-auto px-4 py-20 text-center text-white">
+            <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-bold mb-6">
+              {t('creations_page.title')}
+            </h1>
+            <p className="font-script text-xl md:text-2xl text-gold">
+              {t('creations_page.subtitle')}
+            </p>
+          </div>
         </div>
       </section>
 
@@ -184,7 +180,7 @@ export default function CreationsPage() {
             {t('orders.subtitle')}
           </p>
           <a
-            href={`/${t('nav.commandes')}`}
+            href={`/${locale}/commandes`}
             className="inline-block bg-gold hover:bg-gold/90 text-espresso font-sans font-semibold px-8 py-3 rounded-full transition-all hover:scale-105"
           >
             {t('nav.commandes')}

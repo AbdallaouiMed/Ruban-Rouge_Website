@@ -6,6 +6,7 @@ import { Star, MapPin, Clock } from 'lucide-react';
 import Image from 'next/image';
 import { generateMetadata as genMeta } from '@/lib/metadata';
 import type { Metadata } from 'next';
+import { ScrollScrubVideoBackground } from '@/components/ScrollScrubVideoBackground';
 
 type Props = {
   params: Promise<{ locale: string }>;
@@ -69,36 +70,30 @@ export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section
-        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-espresso via-espresso/95 to-ruban-red-dark"
-        style={{
-          backgroundImage:
-            'url(https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=1600&q=80)',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          backgroundBlendMode: 'overlay',
-        }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
-        <div className="relative z-10 container mx-auto px-4 py-32 text-center text-white">
-          <p className="font-script text-2xl md:text-3xl text-gold mb-6">
-            {t('heritage.since')}
-          </p>
-          <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
-            {t('hero.title')}
-          </h1>
-          <p className="font-sans text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90">
-            {t('hero.subtitle')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="primary" href="/creations">
-              {t('hero.cta_primary')}
-            </Button>
-            <Button variant="outline-gold" href="/contact">
-              {t('hero.cta_secondary')}
-            </Button>
+      <section className="relative bg-gradient-to-br from-espresso via-espresso/95 to-ruban-red-dark">
+        <div className="sticky top-0 h-screen flex items-center justify-center overflow-hidden">
+          <ScrollScrubVideoBackground src="/cake_exploded_video.mp4" />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/60" />
+          <div className="relative z-10 container mx-auto px-4 py-32 text-center text-white">
+            <p className="font-script text-2xl md:text-3xl text-gold mb-6">
+              {t('heritage.since')}
+            </p>
+            <h1 className="font-display text-5xl md:text-7xl lg:text-8xl font-bold mb-6">
+              {t('hero.title')}
+            </h1>
+            <p className="font-sans text-xl md:text-2xl mb-12 max-w-3xl mx-auto opacity-90">
+              {t('hero.subtitle')}
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button variant="primary" href="/creations">
+                {t('hero.cta_primary')}
+              </Button>
+              <Button variant="outline-gold" href="/contact">
+                {t('hero.cta_secondary')}
+              </Button>
+            </div>
           </div>
-        </div>
+        </div>        
       </section>
 
       {/* Heritage Strip */}
